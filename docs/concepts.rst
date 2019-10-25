@@ -16,7 +16,7 @@ A Stratum project must provide the following functionalities:
 
   * When a new source file with a stored procedure is available the stored procedure must be loaded in to the target database.
   * When a source file has been modified or some other relevant setting, configuration variable, etc. has been modified the stored procedure must be reloaded in to the database.
-  * When a source file of a stored procedure is not longer available the stored procedure must removed from the database.
+  * When a source file of a stored procedure is no longer available the stored procedure must be removed from the database.
 
 * Wrapping: Generate code for invoking the stored procedures. The generated code must relieve the developers of the application of the hustle of invoking a stored procedure such as (depending on the programing language and RDBMS):
 
@@ -37,9 +37,9 @@ Depending and the RDBMS, programing language and actual type of the stored proce
 
 * A stored procedure that counts the current number of employees in a department returns a result set with one row with one column only.
 
-* A stored procedure that selects the details (e.g. name, given name, employee number, department) of an employee given a technical ID returns a result set with one row only. Moreover, if we impose that this stored procedure is invoked with valid technical IDs only the result set is expected to have one and only one row. If the stored procedure returns a result set with zero rows the application has a bug (e.g. passed a wrong technical ID). If the stored procedure returns a result set with two or more rows the stored procedure has a bug (e.g. a forgotten (join) condition).
+* A stored procedure that selects the details (e.g. name, given name, employee number, and department) of an employee given a technical ID returns a result set with one row only. Moreover, if we impose that this stored procedure is invoked with valid technical IDs only the result set is expected to have one and only one row. If the stored procedure returns a result set with zero rows the application has a bug (e.g. passed a wrong technical ID). If the stored procedure returns a result set with two or more rows the stored procedure has a bug (e.g. a forgotten (join) condition).
 
-* A stored procedure that select the details of all employees of a department returns a result set with multiple rows.
+* A stored procedure that selects the details of all employees of a department returns a result set with multiple rows.
 
 As an application developer, you don't want for each stored procedure like the first example take the first row from (depending on the programming language) an array, a list, a set, or iterate only once over a cursor, then take the first column and validate that the found value is indeed an integer.
 
@@ -71,7 +71,7 @@ Other designation types are:
 
 * **hidden** A stored procedure with designation type hidden is a stored procedure that is called by other stored procedure and is not intended to be invoked from the application.
 
-* **log** A stored procedure with designation type log returns multiple result sets with typically one row with one column. Theses values are logged to a logger or (with timestamp) on the standard output.
+* **log** A stored procedure with designation type log returns multiple result sets with typically one row with one column. These values are logged to a logger or (with timestamp) on the standard output.
 
 * **map** A stored procedure with designation type map select zero, one, or more rows but the selected rows have two columns only. The wrapper of the stored procedure will not return the result set but map (using an appropriate data structure in the programing language) from the first column to the second column.
 
