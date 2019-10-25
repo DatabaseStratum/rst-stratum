@@ -1,6 +1,12 @@
 Welcome to Stratum's documentation!
 ===================================
 
+Stratum is a general idea and concept for loading and invoking stored procedures (in a database) from an application using automatically generated wrappers.
+
+
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+
+   introduction
+   concepts
+   benefits
