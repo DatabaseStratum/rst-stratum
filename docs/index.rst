@@ -9,6 +9,7 @@ Currently, the following Stratum projects are available (follow the link to navi
 | Language     |  MySQL & MariaDB    | PostgreSQL         | SQLite                   | SQL Server         |
 +==============+=====================+====================+==========================+====================+
 | PHP          | `PhpStratum MySQL`_ |                    | `PhpStratum SQLite PDO`_ |                    |
++--------------+---------------------+--------------------+--------------------------+--------------------+
 | Python       | `PyStratum MySQL`_  | `PyStratum pgSQL`_ |                          | `PyStratum MSSQL`_ |
 +--------------+---------------------+--------------------+--------------------------+--------------------+
 
