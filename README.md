@@ -2,7 +2,7 @@
 
 [![Documentation Status](https://readthedocs.org/projects/stratum/badge/?version=latest)](https://stratum.readthedocs.io/?badge=latest)
 
-The full documentation is available at [Read the Docs](https://stratum.readthedocs.io/).
+The full documentation is available at https://stratum.readthedocs.io.
 
 # Licence
 
