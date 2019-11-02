@@ -19,7 +19,7 @@ Currently, the following Stratum projects are available (follow the link to navi
 .. _`PyStratum pgSQL`: https://pystratum-pgsql.readthedocs.io
 .. _`PyStratum MSSQL`: https://pystratum-mssql.readthedocs.io
 
-In this documentation we explain the general idea and concept of the above Stratum projects.
+In this documentation we explain the general idea and concept that all above Stratum projects have in common.
 
 .. toctree::
 
