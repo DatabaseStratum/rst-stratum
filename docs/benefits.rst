@@ -23,8 +23,12 @@ Advantages of using a Stratum project (in no particular order) are:
 
 * Constants based on data and metadata stored in database. In your application you can use constants based on the metadata or data of your database.
 
-* Automatically generated wrappers for invoking stored procedures will protect your application against SQL injection attacks.
-
 * Consistent mapping between types in the programming language and database types.
 
 * Invoking a stored procedure is just as simple as calling any other method of a class.
+
+* No SQL code in your application code base.
+
+* Improved security. Your application requires execution rights on stored procedures only. Tables, stored procedures and other database entities can be (highly recommended) owned by another account than the account your application is using for accessing the database.
+
+* Automatically generated wrappers for invoking stored procedures will protect your application against SQL injection attacks.
